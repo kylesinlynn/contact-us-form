@@ -11,9 +11,11 @@
         $db = new DBConnection();
         
         $db->addRecord($name, $email, $message);
+
+        $db->connect = null;
         
     }
 
-    // header('location:.');
+    header('location:.');
 
 ?>
