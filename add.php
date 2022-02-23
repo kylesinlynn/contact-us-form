@@ -8,14 +8,14 @@
         $email = $_POST['email'];
         $message = $_POST['message'];
 
-        $db = new DBConnection();
-        
-        $db->addRecord($name, $email, $message);
+        if ($name == '' or $name == null or $email == '' or $email == null or $message == '' or $message == null) {
+            header('location:./index.php?error=true');
+        } else {
+            $db->addRecord($name, $email, $message);
+        }
 
         $db->connect = null;
-        
     }
 
     header('location:.');
-
 ?>

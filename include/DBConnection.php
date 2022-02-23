@@ -15,8 +15,6 @@
 
                 $this->connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-                echo 'connected';
-
                 return $this->connect;
 
             } catch (PDOException $e) {
@@ -35,6 +33,18 @@
 
         }
 
+        public function getRecords() {
+
+            $sql = 'SELECT * FROM contact_details ORDER BY id ASC';
+            $stmt = $this->connect->prepare($sql);
+            $stmt->execute();
+            
+            return $stmt->fetchAll();
+
+        }
+
     }
+
+    $db = new DBConnection();
 
 ?>
