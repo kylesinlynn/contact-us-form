@@ -9,14 +9,14 @@
 ### Setup on Xampp (Ubuntu)
 
 - extract zip
-'''bash
+```bash
 unzip (zip_file_name).zip
-'''
+```
 
 - move the extracted directory to /opt/lampp/htdocs/
-'''bash
+```bash
 sudo mv (directory_name) /opt/lampp/htdocs/
-'''
+```
 
 - create database and name it as 'contact_us'
 - import table which is located at (directory_name)/include/_db/contact_us.sql
