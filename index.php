@@ -14,17 +14,17 @@
 
         <div>
             <label for="name">Your Name</label>
-            <input type="text" name="name" id="name" required autofocus>
+            <input type="text" name="name" id="name" max=255 required autofocus>
         </div>
         
         <div>
             <label for="email">Your Email</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" max=255 required>
         </div>
 
         <div>
             <label for="message">Your Message</label>
-            <textarea name="message" required></textarea>
+            <textarea name="message" max=500 required></textarea>
         </div>
 
         <div>
