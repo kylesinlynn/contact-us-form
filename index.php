@@ -101,6 +101,10 @@
             .mobile-view {
                 display: block;
             }
+
+            .container {
+                min-height: 40rem;
+            }
         }        
 
 
