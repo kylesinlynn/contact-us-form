@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Contact Us</title>
 
     <style>
@@ -14,7 +14,7 @@
 
         .container {
             margin: auto;
-            max-width: 111rem;
+            max-width: 80rem;
             min-height: 50rem;
             display: flex;
             flex-direction: row;
@@ -43,6 +43,7 @@
             font-size: 1.2rem;
             padding: 0 1rem;
             font-family: 'Rubik', sans-serif;
+            border: 0.1rem blue solid;
             border-radius: 0.8rem;
         }
 
@@ -71,12 +72,12 @@
         }
 
         .desktop-view img {
-            max-width: 40rem;
+            max-width: 38rem;
         }
 
         .responsive-image {
             width: 100%;
-            max-width: 38rem;
+            max-width: 35rem;
             height: auto;
         }
 
@@ -92,7 +93,7 @@
             display: none;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 888px) {
             .desktop-view {
                 display: none;
             }
